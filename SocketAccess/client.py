@@ -14,7 +14,7 @@ def recvMsg(sock) :
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-sock.connect(("49.142.150.204", 9898))
+sock.connect(("49.142.150.204", 12344))
 
 data = sock.recv(1024)
 print(data.decode('utf-8'))

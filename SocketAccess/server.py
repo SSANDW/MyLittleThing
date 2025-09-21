@@ -26,11 +26,13 @@ print("[+] 관리자 대화")
 print("[+] 유저 기다리는중..")
 
 conn, addr = sock.accept()
+print(conn)
+print(addr)
 
 print("[+] 유저 입장..")
 
-conn.send("[+] 관리자 대화".encode('utf-8'))
-conn.send("[+] 도움이 필요한 내용 입력해주세요!".encode('utf-8'))
+conn.send("[+] 관리자 대화".encode())
+conn.send("[+] 도움이 필요한 내용 입력해주세요!".encode())
 
 t1 = threading.Thread(target= sendMsg, args=(conn,))
 t2 = threading.Thread(target= recvMsg, args=(conn,))
