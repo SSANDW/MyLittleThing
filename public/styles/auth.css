@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: var;
+    font-size: xx-large;
+}
+
+form {
+    max-width: 25rem;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form a:hover {
+    color: rgb(165, 6, 6)
+}
+
+form button {
+    margin: 2rem 0 0 0;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+#switch-form {
+    display: block;
+    margin: 5rem 0 0 0;
+    text-align: center;
+}
